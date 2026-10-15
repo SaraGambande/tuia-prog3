@@ -30,9 +30,6 @@ class BreadthFirstSearch:
         frontier = QueueFrontier()
         frontier.add(root)
 
-        # Current node, starting from the root
-        node = root
-
         while True:
             # Fail if the frontier is empty
             if frontier.is_empty():

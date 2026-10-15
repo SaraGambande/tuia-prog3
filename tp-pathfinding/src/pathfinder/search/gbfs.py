@@ -5,15 +5,7 @@ from ..models.node import Node
 
 
 def manhattan_distance(state: tuple[int, int], end: tuple[int, int]) -> int:
-    """Estimate the distance between two cells, ignoring walls
-
-    Args:
-        state (tuple[int, int]): Current cell position
-        end (tuple[int, int]): Target cell position
-
-    Returns:
-        int: Manhattan (taxicab) distance between both cells
-    """
+    # Distance between two cells ignoring walls
     return abs(state[0] - end[0]) + abs(state[1] - end[1])
 
 
